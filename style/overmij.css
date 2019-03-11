@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Kanit;
+  src: url(fonts/Kanit/Kanit-BoldItalic.ttf);
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 2fr;
+	
+	grid-template-areas:
+		"header header"
+		"aboutme projects"
+		"photography contact";
+
+}
+
+body {
+	background-color: black;
+	font-family: Kanit;
+}
+
+/*HEADER*/
+
+.box-1 {
+	grid-area: header;
+	background-color: white;
+	width: 500px;
+	height: 200px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#name {
+	margin: 0;
+	position: absolute;
+	font-size: 100px;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 100;
+}
+
+#overlay {
+	margin: 0;
+	position: absolute;
+	font-size: 100px;
+	top: 51%;
+	left: 49%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);
+	text-align: center;
+	text-transform: uppercase;
+	color: #FB3FF9;
+}
+
+
+
+
+
+
