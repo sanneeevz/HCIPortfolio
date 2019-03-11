@@ -1,7 +1,5 @@
-@font-face {
-  font-family: Kanit;
-  src: url(fonts/Kanit/Kanit-BoldItalic.ttf);
-}
+
+@import url('https://fonts.googleapis.com/css?family=Kanit:900i');
 
 .grid-container{
 	display: grid;
