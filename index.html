@@ -4,13 +4,33 @@
     <meta charset="UTF-8" />
     <title> Sanne van Zeijl </title>
     <link type="text/css" href="style/main.css" rel="stylesheet" />
+    
   </head>
  
   <body>
 
     <div class="grid-container">
 
-      <div class="grid-item box-1">
+<!-- burgerChange(this) --><!-- 
+onclick="showMenu(); burgerChange(this);" > -->
+
+      <!-- HEADER  -->
+      <div class="hamburger">
+		  <div class="bar1"></div>
+		  <div class="bar2"></div>
+		  <div class="bar3"></div>
+	  </div>
+
+	  <nav id="menu" class="inactive">
+		<ul>
+			<li><a href=topics.html>Topics</a></li>
+			<li><a href=workshop.html>Workshops</a></li>
+			<li><a href=excursion.html>Excursion</a></li>
+			<li><a href=labweeks.html>Lab weeks</a></li>
+		</ul>
+	  </nav>
+      <div class="grid-item box-1 name-box">
+        <h1 id="studie"> Communicatie en multimedia design </h1>
         <div> 
           <h1 id="name"> Sanne </h1> 
         </div>
@@ -18,39 +38,43 @@
           <h1 id="overlay"> Sanne </h1>
         </div>
         <div>
-          <h1 id="studie"> Communicatie en multimedia design </h1>
-        </div>
-        <div>
           <h1 id="birth"> 1998 </h1>
         </div>
       </div>
 
+      <!-- LINE -->
+      <div class="vl"></div>
+      <div class="hl"></div>
+
+      <!-- TOPICS -->
       <div class="grid-item box-2">
 
-        <a class="nav" href="url">Over Mij</a>
+        <a class="nav" href="topics.html"> Topics </a>
 
       </div>
 
+      <!-- WORKSHOPS -->
       <div class="grid-item box-3">
 
-        <a class="nav" href="url">Projecten</a>
+        <a class="nav" href="workshop.html">Workshops</a>
 
       </div>
 
+      <!-- EXCURSION -->
       <div class="grid-item box-4">
 
-        <a class="nav" href="url">Fotografie</a>
+        <a class="nav" href="excursion.html">Excursion</a>
 
       </div>
 
+      <!-- LAB WEEKS -->
       <div class="grid-item box-5">
 
-        <a class="nav" href="url">Contact</a>
+        <a class="nav" href="labweeks.html">Lab weeks</a>
       
       </div>
 
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
     <script src="script/main.js"></script>
   </body>
 

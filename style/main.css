@@ -1,5 +1,191 @@
+/*
+@import url('https://fonts.googleapis.com/css?family=Kanit:900i');*/
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+@import url('https://fonts.googleapis.com/css?family=Kanit:700i&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Kanit:900i');
+html {
+  box-sizing: border-box;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	
+	grid-template-areas:
+		"header"
+		"topics"
+		"workshops"
+		"excursion"
+		"labweeks";
+}
+
+body {
+	background-color: black;
+	font-family: 'Kanit', sans-serif;
+}
+
+/*HAMBURGER*/
+
+.hamburger {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 90%;
+}
+
+#menu{
+	background-color: black;
+	width: 200px;
+	height: 400px;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 200;
+}
+
+li {
+	line-height: 400%;
+	text-align: center;
+	font-size: 20px;
+	margin-right: 25%;
+	text-transform: uppercase;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+	opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.inactive{
+  display: none;
+}
+
+.active{
+  display: initial;
+  color: #FB3FF9;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+
+}
+
+ul {
+	list-style-type: none;
+}
+
+a:visited { 
+	text-decoration-color: none;
+	color: white;
+}
+
+a:hover {
+	color: #FB3FF9;
+	text-decoration: none;
+}
+
+a:focus { 
+	text-decoration: none; 
+}
+
+/*HEADER*/
+
+.box-1 {
+	grid-area: header;
+	background-color: white;
+	width: 300px;
+	height: 100px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#name {
+	margin: 0;
+	position: absolute;
+	font-size: 70px;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 100;
+}
+
+#overlay {
+	margin: 0;
+	position: absolute;
+	font-size: 70px;
+	top: 51%;
+	left: 49%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);
+	text-align: center;
+	text-transform: uppercase;
+	color: #FB3FF9;
+}
+
+#studie {
+	margin: 0;
+	position: absolute;
+	font-size: 10px;
+	top: -22px;
+	text-transform: uppercase;
+	color: white;
+}
+
+#birth {
+	margin: 0;
+	position: absolute;
+	font-size: 10px;
+	top: 83px;
+	left: 90%;
+	text-transform: uppercase;
+	color: black;
+}
+
+/*LINE*/
+
+.vl {
+  display: none;
+}
+
+.hl {
+  display: none;
+}
+
+.nav {
+	display: none;
+}
+
+/* IPAD SIZE */
+@media only screen and (min-width: 768px) {
+
+#myLinks {
+	display: none;
+}
 
 .grid-container{
 	display: grid;
@@ -7,14 +193,18 @@
 	
 	grid-template-areas:
 		"header header"
-		"aboutme projects"
-		"photography contact";
+		"topics workshops"
+		"excursion labweeks";
 
+}
+
+.hamburger {
+	display: none;
 }
 
 body {
 	background-color: black;
-	font-family: 'Kanit', Sans Serrif;
+	font-family: 'Kanit', Arial;
 }
 
 /*HEADER*/
@@ -77,58 +267,105 @@ body {
 	color: black;
 }
 
-.box-2 {
-	grid-area: aboutme;
-	width: 50%;
-	text-align: center;
+/*LINE*/
+
+.vl {
+  display: block;
+  border-left: 2px solid white;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: -1;
+  transform: translate(-50%,0);
 }
+
+.hl {
+  display: block;
+  border-top: 2px solid white;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  transform: translate(0, -50%);
+}
+
+/*TOPICS*/
+
+.box-2 {
+	grid-area: topics;
+	height: 10em;
+	margin: 0;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/*.box-2 a{
+	margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}*/
+
+/*WORKSHOPS*/
 
 .box-3 {
-	grid-area: projects;
-	width: 50%;
-	text-align: center;
+	grid-area: workshops;
+	height: 10em;
+	margin: 0;
+	position: absolute;
+	top: 25%;
+	left: 75%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
+
+/*.box-3 a{
+	margin: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}*/
+
+/*EXCURSION*/
 
 .box-4 {
-	grid-area: photography;
-	width: 50%;
-	text-align: center;
+	grid-area: excursion;
+	height: 10em;
+	margin: 0;
+	position: absolute;
+	top: 85%;
+	left: 25%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
+
+/*LABWEEKS*/
 
 .box-5 {
-	grid-area: contact;
-	width: 50%;
-	text-align: center;
+	grid-area: labweeks;
+	height: 10em;
+	margin: 0;
+	position: absolute;
+	top: 85%;
+	left: 75%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
-
-a:link {
-	display: none;
-}
-
-/* IPAD SIZE */
-@media only screen and (min-width: 768px) {
-
-	
-
-}
-
-	/* DESKTOP SIZE */
-@media only screen and (min-width: 1024px) {
 
 a:link {
 	display: block;
 	text-decoration-line: none;
 	font-size: 50px;
 	color: white;
-	font-family: 'Kanit';
-}
-
-a:hover {
-	color: #FB3FF9;
-}
-
-a:visited {
-  color: white;
+	font-family: 'Kanit', Arial;
 }
 
 }

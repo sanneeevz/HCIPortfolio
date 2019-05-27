@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title> Arduino </title>
+    <link type="text/css" href="style/arduino.css" rel="stylesheet" />
+  </head>
+ 
+  <body>
+
+    <div class="grid-container">
+
+    <!-- HEADER -->
+
+    <div class="hamburger">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <nav id="menu" class="inactive">
+    <ul>
+      <li><a href=index.html>Home</a></li>
+      <li><a class="select" href=topics.html>Topics</a></li>
+      <li><a href=workshop.html>Workshops</a></li>
+      <li><a href=excursion.html>Excursion</a></li>
+      <li><a href=labweeks.html>Lab weeks</a></li>
+    </ul>
+    </nav>
+
+    <div class="content-holder">
+        <div class="grid-item box-1">
+          <div class="title"> 
+            <h1 class="name"> Arduino </h1> 
+            <p id=breadcrumbs> <a href=workshop.html> workshops </a> > arduino </p>
+        </div>
+
+        <div class="grid-item box-2">
+          
+          <h2 id="assignments"> Assignment 3 c </h2>
+          <div class="content">
+            <div class="text"> 
+             <p> In deze opdrachten moesten we ervoor zorgen dat de groene led twee keer zo snel knipperde als de gele led. Voor deze opdracht hadden we al wat informatie gekregen. Dit was een afbeelding waarin stond hoe we de ledjes moesten aansluiten en een gegeven code. De opdracht was om die code dus zo aan te passen dat de groene led sneller knipperde als de gele led. </br>
+            </br> 
+             In de code is te zien dat we beide ledjes aanroepen met de pinMode. Nummer 12 en 13 zijn de nummers waarmee de ledjes verbonden zijn aan het arduino bord. Daarna is in de code te zien dat er een loop word gemaakt wat ervoor zorgt dat de ledjes de functie blijven uitvoeren. De HIGH en LOW vertellen de ledjes wanneer ze aan (high) en uit (low) moeten zijn. Door het delay aan te passen naar 500 veranderd de snelheid en zorgt ervoor dat de gele en groene led van elkaar verschillen. </p>
+            </div>
+            <div>
+              <img id="code" src="img/3C.png">
+              <video width="auto" height="450" controls muted autoplay="autoplay">
+              <source src="vid/3c.mp4" type="video/mp4" /> 
+              </video>
+            </div>
+       </div>
+
+       <div class="grid-item box-3">
+          
+          <h2 id="research"> Assignment 4 c </h2>
+          <div class="text"> 
+             <p> 
+              Voor deze opdracht moesten we de code zo aanpassen dat de eene led langzaam uit gaat en de ander langzaam aan. Dit moest tegelijkertijd gebeuren. Het geen wat aan de code is toegevoegd is de analogWrite van de yellow led pin. Hierin word aangegeven dat de yellow led pin een licht sterkte heeft van 255 min de brightness. De brightness is op dat moment de helft van de groene led. De groene led is namelijk al eerder opgeroepen. 
+            </p>
+            </div>
+            <div>
+              <img id="code" src="img/4C.png">
+              <video width="auto" height="450" controls muted autoplay="autoplay" src="vid/4c.mp4" type="video/mp4"> 
+              </video>
+            </div>
+       </div>
+
+       <div class="grid-item box-4">
+          
+          <h2 id="reflect"> Assignment 6 c </h2>
+           <div class="content">
+            <div class="text"> 
+             <p> In deze opdracht kregen we een potmeter waarmee we de opdracht moesten uitvoeren. Een potmeter is een klein ding waar je aan kan draaien. De opdracht was dat wanneer je aan de potmeter draait de eene led langzaam aangaat, terwijl de andere led langzaam uitgaat. In de code hebben we een map toegevoegd. Die ervoor zorgt dat de waarde van het licht van 0 naar 1024 naar 0 naar 255 gaat. Om ze niet beide hetzelfde te laten doen hebben we de code bij de groene led aangepast dat de waarde van het licht de sensor value van de 255 af haalt. Op de manier veranderen ze niet tegelijk wanneer er aan de potmeter gedraaid wordt.</p>
+            </div>
+            <div>
+              <img id="code" src="img/6C.png">
+              <video width="auto" height="450" controls muted autoplay="autoplay" src="vid/6c.mp4" type="video/mp4">
+              </video>
+            </div>
+
+       </div>
+
+       <div class="grid-item box-3">
+          
+          <h2 id="research"> Assignment 7 </h2>
+            <div class="content">
+            <div class="text"> 
+             <p> De opdracht was om de ledjes uit te laten gaan wanneer er geen licht op de LDR kwam. De LDR is  een licht sensor. In de code is te zien dat de waarde van de sensor, de sensor pin (LDR), het groene ledje en het gele ledje worden aangeroepen. Daarna word er gezegd dat de sensor pin informatie moet krijgen en dit moet uitvoeren naar de twee ledjes. In de loop word doorgegeven dat wat er gelezen wordt uit de pin word doorgevoerd als sensorValue. Er word in de loop gebruik gemaakt van een map. De map zorgt ervoor dat de waardes die werden aangegeven niet buiten de 0 tot 255 mogen valen. De waardes die eerst werden aangegeven lagen namelijk tussen de 200 en 830. Uiteindelijk word de value geprint en worden de waardes doorgevoerd naar de ledjes. </p>
+            </div>
+            <div>
+              <img id="code" src="img/7.png">
+              <video width="auto" height="450" controls muted autoplay="autoplay" src="vid/7.mp4" type="video/mp4">
+              </video>
+            </div>
+       </div>
+
+       <div class="grid-item box-4">
+          
+          <h2 id="reflect"> Assignment 8 </h2>
+            <div class="text"> 
+             <p> In deze opdracht werd een resistor vervangen door een LDR. Er zitten nu twee LDR’s in het bord. Hierbij heb ik de code van opdracht 7 gebruikt. Ze gaven niet beide dezelfde waardes aan. Wanneer de een in het licht stond en de ander in het donker gaf hij een waarde van 0. Wanneer ik dit omdraaide, dus de andere in het licht en de ander in het donker, gaf hij een waarde van 215. Wanneer ik ze allebei in het licht liet, gaf hij een waarde van 131. En wanneer ze beide in het donker waren werd er een waarde van 61 gegeven. </p>
+            </div>
+            <div>
+              <img id="code" src="img/8.png">
+              <video width="auto" height="450" controls muted autoplay="autoplay" src="vid/8.mp4" type="video/mp4">
+              </video>
+            </div>
+       </div>
+
+       <div class="grid-item box-3">
+          
+          <h2 id="research"> Assignment 9 b </h2>
+          <div class="text"> 
+             <p> Voor deze opdracht moesten we een ander programma downloaden. Processing heet het programma. We kregen een code voor de Arduino en voor Processing. Door deze code kregen we op het scherm een rondje te zien die groter en kleiner werd door middel van de hoeveelheid licht op de LDR. Door de processing code te veranderen konden we dit rondje veranderen. Ik heb hier een vierkantje van gemaakt die ook nog rond draait. De verandering die ik aan de code heb aangebracht zijn zin 5, 14 en 15. Zin 5 heb de cijfer 400, 400 veranderd naar 900, 900. Dit zorgde ervoor dat het scherm wat ik te zien kreeg met het rondje erin groter werd (ook te zien in het filmpje). Zin 14 heb ik helemaal toegevoegd, dit zorgt ervoor dat het rondje ging draaien. En zin 15 heb ik aangepast van ellipse naar rect, dit zorgt ervoor dat het rondje veranderen in een vierkant. de 50, 600 waren ook andere cijfers. Deze heb ik aangepast zodat het vierkantje verplaatste naar een andere plek waar ik hem duidelijker kon zien, anders verdween hij door het draaien vaak uit beeld, wat je nu nog steeds een beetje ziet in het filmpje. </p>
+            </div>
+            <div>
+              <img id="code" src="img/9B.png">
+              <video width="auto" height="450" controls muted autoplay="autoplay" src="vid/9B.mp4" type="video/mp4">
+              </video>
+            </div>
+       </div>
+
+       <div class="grid-item box-4">
+          
+          <h2 id="reflect"> Assignment 10 f </h2>
+          <div class="text"> 
+             <p> De bedoeling van deze opdracht was dat wanneer je een van de twee knopjes ingedrukt hield, het ledje ging branden. Hierbij maakt het niet uit welke van de twee knopjes. Maar wanneer je ze beiden ingedrukt hield het ledje niet ging branden. In de code staat in de void setup dat de led pin out put moet geven (dus moet gaan branden) en dat de buttons beide informatie moeten krijgen (wanneer er op gedrukt word). De loop zorgt ervoor dat het uiteindelijk werkt. In de loop staat een zin met buttonPinL (de linker knop) en dan een (^) teken met als volgt buttonPinR (de rechter knop). Het teken (^) beter het een of het ander. Dus op de rechter of de linker knop moet worden ingedrukt en dan geeft de led een output HIGH, dus gaat het ledje aan). Wanneer dit dus niet zo is (dus beide knoppen worden ingedrukt), dan gaat het ledje niet aan. </p>
+            </div>
+            <div>
+              <img id="code" src="img/10F.png">
+              <video width="auto" height="450" controls muted autoplay="autoplay" src="vid/10F.mp4" type="video/mp4">
+              </video>
+            </div>
+       </div>
+
+       <div class="grid-item box-3">
+          
+          <h2 id="research"> Assignment 11 b </h2>
+          <div class="text"> 
+             <p> In deze opdracht kregen we een code die we zo moesten veranderen dat de servo motor een originele manier van draaien had. Door de delay aan te passen veranderd het aantal milli seconden tussen het draaien. De cijfers geven de manier van draaien aan. Door deze te veranderen ging hij telkens naar een andere positie. 
+             </p>
+            </div>
+            <div>
+              <img id="code" src="img/11B.png">
+              <video width="auto" height="450" controls muted autoplay="autoplay" src="vid/11B.mp4" type="video/mp4">
+              </video>
+            </div>
+       </div>
+
+       <div class="grid-item box-4">
+          
+          <h2 id="reflect"> Assignment 12 b </h2>
+          <div class="text"> 
+             <p> Deze opdracht moest ook gewerkt worden met de servo motor. Maar in deze opdracht werden er buttons toegevoegd. Wanneer je op de linker button drukt moest hij een bepaalde kant op gaan en wanneer je op de andere button drukt, de andere kant. Dit is in de code gedaan door weer de buttons aan te roepen met buttonPinL en buttonPinR. In de loop word verteld dat wanneer er op gedrukt word de positie moet veranderen naar de eene kant, en bij de ander andersom. 
+             </p>
+            </div>
+            <div>
+              <img id="code" src="img/12B.png">
+              <video width="auto" height="450" controls muted autoplay="autoplay" src="vid/12B.mp4" type="video/mp4">
+              </video>
+            </div>
+       </div>
+
+       <div class="grid-item box-3">
+          
+          <h2 id="research"> Assignment 13 b </h2>
+          <div class="text"> 
+             <p> In deze opdracht moesten we met geluid werken. We kregen een code. De code zorgde ervoor dat de speaker geluid gaf. Deze moesten we veranderen naar een andere code, met dus ook een ander geluid. Door de cijfers achter tone te veranderen, veranderde de toon. Hier hebben we eerst zelf wat mee uitgeprobeerd. Uiteindelijk hebben we op internet gezocht naar een bekend deuntje. We hebben uiteindelijk het geluidje van mario gebruikt. Dit is te horen in het filmpje. 
+             </p>
+            </div>
+            <div>
+              <img id="code" src="img/13B.png">
+              <video width="auto" height="450" controls muted autoplay="autoplay" src="vid/13B.mp4" type="video/mp4">
+              </video>
+            </div>
+       </div>
+
+    </div>
+    
+     <script src="script/main.js"></script>
+  </body>
+
+</html>

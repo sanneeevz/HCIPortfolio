@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100');
+@import url('https://fonts.googleapis.com/css?family=Kanit:700i&display=swap');
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	
+	grid-template-areas:
+		"header"
+		"3c"
+		"4c"
+		"6c"
+		"7"
+		"8"
+		"9b"
+		"10f"
+		"11b"
+		"12b"
+		"13b";
+}
+
+body {
+	background-color: black;
+	font-family: 'Kanit', Arial;
+}
+
+/*HAMBURGER*/
+
+.hamburger {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 90%;
+}
+
+#menu{
+	background-color: black;
+	width: 200px;
+	height: 400px;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 200;
+	border-width: 40px;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: white;
+}
+
+#menu li {
+	line-height: 400%;
+	text-align: center;
+	font-size: 20px;
+	margin-right: 25%;
+	text-transform: uppercase;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+	opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.inactive{
+  display: none;
+}
+
+.active{
+  display: initial;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a:visited { 
+	text-decoration-color: none;
+	color: white;
+}
+
+a:hover {
+	color: #FB3FF9;
+	text-decoration: none;
+}
+
+a:focus { 
+	text-decoration: none; 
+}
+
+/*HEADER*/
+
+.box-1 {
+	grid-area: header;
+	height: 100px;
+	margin: 0;
+}
+
+.title {
+	margin: 0;
+	font-size: 25px;
+	text-transform: uppercase;
+	z-index: 100;
+	color: white;
+}
+
+/*BREADCRUMBS*/
+
+#breadcrumbs {
+	font-family: 'Catamaran', Arial;
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+.content-holder {
+	margin: 0 auto;
+	width: 90%;
+}
+
+
+/*ASSIGNMENTS*/
+
+.box-2 {
+	grid-area: assignments;
+
+}
+
+h2 {
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Catamaran', Arial;
+}
+
+#assignments, #research, #reflect {
+	padding-left: 20px;
+}
+
+.text {
+	color: white;
+	font-family: 'Catamaran', Arial;
+	padding-left: 20px;
+	line-height: 17px;
+}
+
+img {
+	height: 450px;
+	margin-left: 20px;
+}
+
+
+	/* DESKTOP SIZE */
+@media only screen and (min-width: 1024px) {
+
+	.select {
+		text-decoration: underline;
+	}
+
+	.box-1 {
+		margin-top: 30px;
+	}
+
+	.title {
+		text-align: center;
+	}
+
+	#breadcrumbs, h1 {
+	  margin: 0px;
+	  padding: 0px;
+	}
+
+	#breadcrumbs {
+		margin-top: -15px;
+		margin-left: -80px;
+	}
+
+	h1.name {
+	  margin: 0;
+	  padding: 0;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.inactive {
+		display: initial;
+	}
+
+	#menu {
+		display: flex;
+		justify-content: center;
+		width: initial;
+		height: initial;
+		position: initial;
+		transform: none;
+		border-width: 0;
+	}
+
+	#menu ul {
+		display: flex;
+	}
+
+	#menu li {
+		margin: 0 70px;
+	}
+
+	.code {
+		width: 600px;
+	}
+}
+
+
+
+
+
+
+
+
+
