@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran:100');
-@import url('https://fonts.googleapis.com/css?family=Kanit:900i');
+@import url('https://fonts.googleapis.com/css?family=Kanit:700i&display=swap');
 
 .grid-container{
 	display: grid;
@@ -188,7 +188,7 @@ img {
 
 	#breadcrumbs {
 		margin-top: -15px;
-		margin-left: -360px;
+		margin-left: -340px;
 	}
 
 	h1.name {
