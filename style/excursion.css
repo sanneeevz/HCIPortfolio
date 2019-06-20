@@ -199,6 +199,29 @@ img {
 	#menu li {
 		margin: 0 70px;
 	}
+
+	p {
+		color: white;
+		font-family: 'Catamaran';
+		line-height: 17px;
+	}
+
+	#brand {
+		padding: 0px 10px 0px 0px;
+	}
+
+	#auto {
+		padding: 0px 10px 0px 10px;
+	}
+
+	#lek {
+		padding: 0px 10px 0px 10px;
+	}
+
+	#scenario {
+		padding: 0px 0px 0px 10px;
+	}
+
 }
 
 

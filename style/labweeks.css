@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100');
+@import url('https://fonts.googleapis.com/css?family=Kanit:700i&display=swap');
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	
+	grid-template-areas:
+		"header"
+		"een"
+		"twee"
+		"drie"
+		"vier"
+		"zes"
+		"zeven"
+		"acht"
+		"negen"
+		"tien;
+}
+
+body {
+	background-color: black;
+	font-family: 'Kanit', Arial;
+}
+
+/*HAMBURGER*/
+
+.hamburger {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 90%;
+}
+
+#menu{
+	background-color: black;
+	width: 200px;
+	height: 400px;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 200;
+	border-width: 40px;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: white;
+}
+
+#menu li {
+	line-height: 400%;
+	text-align: center;
+	font-size: 20px;
+	margin-right: 25%;
+	text-transform: uppercase;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a:visited { 
+	text-decoration-color: none;
+	color: white;
+}
+
+a:hover {
+	color: #FB3FF9;
+	text-decoration: none;
+}
+
+a:focus { 
+	text-decoration: none; 
+}
+
+/*HEADER*/
+
+.box-1 {
+	grid-area: header;
+	height: 100px;
+	margin: 0;
+}
+
+.title {
+	margin: 0;
+	font-size: 25px;
+	text-transform: uppercase;
+	z-index: 100;
+	color: white;
+}
+
+/*BREADCRUMBS*/
+
+#breadcrumbs {
+	font-family: 'Catamaran', Arial;
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+.content-holder {
+	margin: 0 auto;
+	width: 90%;
+}
+
+h2 {
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Catamaran', Arial;
+}
+
+#dag {
+	padding-left: 20px;
+}
+
+.text {
+	color: white;
+	font-family: 'Catamaran', Arial;
+	padding-left: 20px;
+	line-height: 17px;
+}
+
+	/* DESKTOP SIZE */
+@media only screen and (min-width: 1024px) {
+
+	.select {
+		text-decoration: underline;
+	}
+
+	.box-1 {
+		margin-top: 30px;
+	}
+
+	.title {
+		text-align: center;
+	}
+
+	#breadcrumbs, h1 {
+	  margin: 0px;
+	  padding: 0px;
+	}
+
+	#breadcrumbs {
+		margin-top: -15px;
+		margin-left: -80px;
+	}
+
+	h1.name {
+	  margin: 0;
+	  padding: 0;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	#menu {
+		display: flex;
+		justify-content: center;
+		width: initial;
+		height: initial;
+		position: initial;
+		transform: none;
+		border-width: 0;
+	}
+
+	#menu ul {
+		display: flex;
+	}
+
+	#menu li {
+		margin: 0 70px;
+	}
+
+	/*BOX 2*/
+
+	.box-2 {
+	grid-area: een;
+	height: 600px;
+	}
+
+	.dageen {
+		float: left;
+		height: 290px;
+		width: auto;
+	}
+
+	#eeneen {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#eentwee {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#eendrie {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#eenvier {
+		padding: 10px 0px 10px 0px;
+	}
+
+	/*BOX 3*/
+
+	.box-3 {
+	grid-area: twee;
+	height: 700px;
+	}
+
+	.dagtwee {
+		float: left;
+		height: 335px;
+		width: auto;
+	}
+
+	#tweeeen {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#tweetwee {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#tweedrie {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#tweevier {
+		padding: 10px 0px 10px 0px;
+	}
+
+	/*BOX 4*/
+
+	.box-4 {
+	grid-area: drie;
+	height: 650px;
+	}
+
+	.dagdrie {
+		float: left;
+		height: 270px;
+		width: auto;
+		padding: 5px;
+
+	}
+
+	/*BOX 5*/
+
+	.box-5 {
+	grid-area: vier;
+	height: 650px;
+	}
+
+	.dagvier {
+		float: left;
+		height: 255px;
+		width: auto;
+	}
+
+	#viereen {
+		padding: 10px 10px 10px 0px;
+		/*top right bottom left*/
+	}
+
+	#viertwee {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#vierdrie {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#viervier {
+		padding: 10px 0px 10px 0px;
+	}
+
+	/*BOX 6*/
+
+	.box-6 {
+	grid-area: zes;
+	height: 680px;
+	}
+
+	.dagzes {
+		float: left;
+		height: 360px;
+		width: auto;
+	}
+
+	#zeseen {
+		padding: 10px 10px 10px 0px;
+		/*top right bottom left*/
+	}
+
+	#zestwee {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#zesdrie {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#zesvier {
+		padding: 10px 0px 10px 0px;
+	}
+
+	/*BOX 7*/
+
+	.box-7 {
+	grid-area: zeven;
+	height: 670px;
+	}
+
+	.dagzeven {
+		float: left;
+		height: 320px;
+		width: auto;
+	}
+
+	#zeveneen {
+		padding: 10px 10px 10px 0px;
+		/*top right bottom left*/
+	}
+
+	#zeventwee {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#zevendrie {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#zevenvier {
+		padding: 10px 0px 10px 0px;
+	}
+
+	/*BOX 8*/
+
+	.box-8 {
+	grid-area: acht;
+	height: 700px;
+	}
+
+	.dagacht {
+		float: left;
+		height: 320px;
+		width: auto;
+	}
+
+	#achteen {
+		padding: 10px 10px 10px 0px;
+		/*top right bottom left*/
+	}
+
+	#achttwee {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#achtdrie {
+		padding: 10px 10px 10px 0px;
+	}
+
+	#achtvier {
+		padding: 10px 0px 10px 0px;
+	}
+
+	/*BOX 9*/
+
+	.box-9 {
+	grid-area: negen;
+	height: 650px;
+	}
+
+	.dagnegen {
+		float: left;
+		height: 320px;
+		width: auto;
+	}
+
+	#negeneen {
+		padding: 10px 10px 30px 0px;
+		/*top right bottom left*/
+	}
+
+	#negentwee {
+		padding: 10px 10px 30px 0px;
+	}
+
+	#negendrie {
+		padding: 10px 0px 30px 0px;
+	}
+
+/*	REST*/
+
+	#een {
+		float: left;
+		height: 300px;
+		width: auto;
+		padding: 10px 10px 10px 0px;
+	}
+
+	#twee {
+		float: left;
+		height: 300px;
+		width: auto;
+		padding: 10px 10px 10px 0px;
+	}
+
+	#drie {
+		float: left;
+		height: 300px;
+		width: auto;
+		padding: 10px 10px 10px 0px;
+	}
+
+	#vier {
+		float: left;
+		height: 300px;
+		width: auto;
+		padding: 10px 0px 10px 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
